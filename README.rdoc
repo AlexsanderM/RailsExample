@@ -3,3 +3,31 @@
 Example Ruby on Rails Tutorial by MICHAEL HARTL
 
 rails generate controller MainPages home help
+
+
+
+
+
+### helpful information ###
+
+# Undoing the generation
+
+  $ rails generate controller MainPages home help
+  $ rails destroy  controller MainPages home help
+
+
+# Undoing model
+
+  $ rails generate model Foo bar:string baz:integer
+  $ rails destroy model Foo
+
+
+# Undo a single migration step using
+
+  $ rake db:migrate
+  $ rake db:rollback
+
+
+# Go all the way back to the beginning
+
+  $ rake db:migrate VERSION=0
