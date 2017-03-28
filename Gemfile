@@ -3,6 +3,7 @@ ruby '2.3.1'
 
 
 gem 'rails', '4.2.6'
+gem 'bootstrap-sass', '2.3.2.0'
 
 
 group :development, :test do

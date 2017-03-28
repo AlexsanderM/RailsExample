@@ -31,3 +31,21 @@ rails generate controller MainPages home help
 # Go all the way back to the beginning
 
   $ rake db:migrate VERSION=0
+
+
+# split divides a string into an array
+"fooxbarxbazx".split('x')
+["foo", "bar", "baz"]
+
+# You can also add to arrays with the push method or its equivalent operator, <<:
+a.push(6) => [42, 8, 17, 6]
+a << 7 => [42, 8, 17, 6, 7]
+
+# join and array
+a = [42, 8, 17, 7, "foo", "bar"]
+a.join => "428177foobar"  # a.join(, ) => "42, 8, 17..."
+
+# to_a
+(0..9).to_a  =>  [0, 1, 2, 3...]  # Ranges also work with characters
+
+# :name is a symbol.
