@@ -2,9 +2,9 @@
 
 Example Ruby on Rails Tutorial by MICHAEL HARTL
 
-rails generate controller MainPages home help
+$ rails generate controller MainPages home help
 
-
+$ rails generate controller Users new
 
 
 
@@ -33,9 +33,9 @@ rails generate controller MainPages home help
   $ rake db:migrate VERSION=0
 
 
-# split divides a string into an array
+# split divides a string into an array  \n
 "fooxbarxbazx".split('x')
-["foo", "bar", "baz"]
+\["foo", "bar", "baz"]
 
 # You can also add to arrays with the push method or its equivalent operator, <<:
 a.push(6) => [42, 8, 17, 6]

@@ -1,7 +1,14 @@
 Rails.application.routes.draw do
-  get 'main_pages/home'
-  get 'main_pages/help'
-  get 'main_pages/about'
+get 'users/new'
+
+root 'main_pages#home'
+
+match '/signup',  to: 'users#new',          via: 'get'
+
+match '/help',    to: 'main_pages#help',    via: 'get'
+# before  get 'main_pages/help'  named route called help_path that returns the path to that page.
+match '/about',   to: 'main_pages#about',   via: 'get'
+match '/contact', to: 'main_pages#contact', via: 'get'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
