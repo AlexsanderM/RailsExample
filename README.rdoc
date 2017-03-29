@@ -6,6 +6,11 @@ $ rails generate controller MainPages home help
 
 $ rails generate controller Users new
 
+  $ rails generate model User name:string email:string
+  # Migrations provide a way to alter the structure of the database incrementally,
+  # so that our data model can adapt to changing requirements.
+
+$ bundle exec rake db:migrate
 
 
 ### helpful information ###
@@ -33,9 +38,9 @@ $ rails generate controller Users new
   $ rake db:migrate VERSION=0
 
 
-# split divides a string into an array  \n
-"fooxbarxbazx".split('x')
-\["foo", "bar", "baz"]
+# split divides a string into an array  \
+  "fooxbarxbazx".split('x')
+  \["foo", "bar", "baz"]
 
 # You can also add to arrays with the push method or its equivalent operator, <<:
 a.push(6) => [42, 8, 17, 6]
