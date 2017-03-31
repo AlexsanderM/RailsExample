@@ -4,6 +4,8 @@ ruby '2.3.1'
 
 gem 'rails', '4.2.6'
 gem 'bootstrap-sass', '2.3.2.0'
+gem 'bcrypt', '>= 3.1.10'
+# bcrypt to irreversibly encrypt the password to form the password hash
 
 
 group :development, :test do

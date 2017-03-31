@@ -12,6 +12,15 @@ $ rails generate controller Users new
 
 $ bundle exec rake db:migrate
 
+$ rails generate migration add_index_to_users_email
+$ bundle exec rake db:migrate
+
+add gem  'bcrypt', '>= 3.1.10'
+sudo apt-get install ruby-dev
+bundle install
+
+$ rails generate migration add_password_digest_to_users password_digest:string
+
 
 ### helpful information ###
 
