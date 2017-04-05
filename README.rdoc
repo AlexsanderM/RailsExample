@@ -41,6 +41,9 @@ $ rails generate migration add_password_digest_to_users password_digest:string
   $ rake db:migrate
   $ rake db:rollback
 
+# clean database
+
+  $ rake db:reset
 
 # Go all the way back to the beginning
 
